@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Quick Styler</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+}
+
+header{
+background:#4CAF50;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+section{
+padding:30px;
+}
+
+.portfolio{
+display:flex;
+gap:20px;
+}
+
+.box{
+background:#eee;
+padding:20px;
+width:150px;
+text-align:center;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>HTML Quick Styler</h1>
+<p>Welcome to my portfolio website</p>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>I am a web developer learning HTML projects.</p>
+</section>
+
+<section>
+<h2>Portfolio Gallery</h2>
+
+<div class="portfolio">
+<div class="box">Project 1</div>
+<div class="box">Project 2</div>
+<div class="box">Project 3</div>
+</div>
+
+</section>
+
+<section>
+<h2>Contact Form</h2>
+
+<form onsubmit="showMessage(); return false;">
+
+Name:<br>
+<input type="text" required><br><br>
+
+Email:<br>
+<input type="email" required><br><br>
+
+Message:<br>
+<textarea required></textarea><br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<p id="msg"></p>
+
+<script>
+function showMessage(){
+document.getElementById("msg").innerHTML = "Form Submitted Successfully!";
+}
+</script>
+</section>
+
+<footer>
+<p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
